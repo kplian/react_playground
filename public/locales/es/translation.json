@@ -1,4 +1,7 @@
 {
-    "hello.label": "Hola",
-    "thankyou.label": "Gracias"
+    "hello": "Hola {{ name }}",
+    "thankyou": "Gracias",
+    "mipagina":{
+        "hello":"Hola propio"
+    }
 }

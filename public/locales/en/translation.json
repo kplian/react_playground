@@ -1,4 +1,8 @@
 {
-    "hello.label": "Hello",
-    "thankyou.label": "Thank you"
+    "hello": "Hello {{ name }}",
+    "thankyou": "Thank you",
+    "body": "Body",
+    "mipagina":{
+        "hello":"Custom Hello"
+    }
 }

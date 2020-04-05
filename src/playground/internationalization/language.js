@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react';
 import { useTranslation, withTranslation } from 'react-i18next';
+//import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
-const InternComp = () => {
+const Body = () => {
     console.log('render intern component');
     return(
         <p>Esto es una prueba</p>
@@ -10,23 +11,24 @@ const InternComp = () => {
 };
 
 const Hello = () => {
-  console.log('render thank hello');
+  console.log('render hello');
   const { t, i18n } = useTranslation();//this with hooks
 
   return (
     <div>
-      {t('hello.label')}
-      <InternComp />
+      {t('hello', { name: " Jaime "})}
+      <Body />
     </div>
   )
 }
 
 
-const IntThankYou = ({t}) => {
+const IntThankYou = ({ t }) => {
   console.log('render thank you');
+  
   return (
     <div>
-      {t('thankyou.label')}
+      {t('thankyou')}
     </div>
   )
 }
@@ -37,7 +39,8 @@ const LanguageSelector = () => {
     const { t, i18n } = useTranslation()
 
     const changeLanguage = (event) => {
-        i18n.changeLanguage(event.target.value)
+        i18n.changeLanguage(event.target.value);
+        console.log('change language');
     }
 
     return (
@@ -47,14 +50,21 @@ const LanguageSelector = () => {
         </div>
     )
 }
+
+const Loader = () => (
+  <div className="App">    
+    <div>loading...</div>
+  </div>
+);
   
 const TestApp = () => {
     return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Loader />}>
         <div>        
           <LanguageSelector />
           <Hello />
-          <ThankYou />        
+          <ThankYou />
+               
       </div>
     </Suspense>
     )
