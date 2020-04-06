@@ -1,7 +1,6 @@
 {
-    "hello": "Hola {{ name }}",
-    "thankyou": "Gracias",
+    "hello": "Hola {{ name }}",    
     "mipagina":{
         "hello":"Hola propio"
-    }
+    }    
 }
