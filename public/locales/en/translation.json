@@ -1,6 +1,8 @@
 {
-    "hello": "Hello {{ name }}",
-    "thankyou": "Thank you",    
+    "hello": "Hello how are you {{ name }}",
+    "thankyou": "Thank you",
+    "English": "English",
+    "Spanish": "Spanish",
     "mipagina":{
         "hello":"Custom Hello"
     },

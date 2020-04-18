@@ -6,10 +6,11 @@ import i18n from './i18n';
 const Body = () => {
     console.log('render intern component');
     const name = 'Jaime';
+    const { t, i18n } = useTranslation();//this with hooks
     return(
       <p>
         <Trans i18nKey="body" name={name}>
-          Hello <strong>{{name}}</strong>, you have a message.
+           Hello <strong>{{name}}</strong>, you have a message guy. <br/>
         </Trans>
       </p>
     );    
@@ -21,6 +22,8 @@ const Hello = () => {
 
   return (
     <div>
+      <p>{t('hello', { name: " Jaime "})}   .... { t('mipagina.hello') }</p>
+      <br/>
       {t('hello', { name: " Jaime "})}
       <Body />
     </div>
@@ -33,7 +36,7 @@ const IntThankYou = ({ t }) => {
   
   return (
     <div>
-      {t('thankyou')}
+      {t('thankyou')}  ...
     </div>
   )
 }
@@ -46,13 +49,13 @@ const LanguageSelector = () => {
     
     const changeLanguage = (event) => {
         i18n.changeLanguage(event.target.value);
-        console.log('change language');
+        console.log('change language', event.target.value, t('Spanish'));
     }
 
     return (
         <div onChange={changeLanguage}>
-          <input type="radio" value="en" name="language" defaultChecked={language === "en" ? true: null} /> English
-          <input type="radio" value="es" name="language" defaultChecked={language === "es" ? true: null}/> Spanish
+          <input type="radio" value="en" name="language" defaultChecked={language === "en" ? true: null} /> {t('English')}
+          <input type="radio" value="es" name="language" defaultChecked={language === "es" ? true: null}/> {t('Spanish')}
         </div>
     )
 }
