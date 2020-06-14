@@ -1,16 +1,15 @@
-import React from 'react';
-import TablePage from './lib/TablePage';
+import React, { Suspense, lazy } from 'react';
 
 const config = {
     at1: 'fdafd',
     at2: 'fdafsda'
 };
-
+const TablePage = lazy(() => import('./lib/TablePage'));
 const Funcionario = () => { 
     return(
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <TablePage config={config} ></TablePage>
-        </div>
+        </Suspense>
     ); 
 };
 

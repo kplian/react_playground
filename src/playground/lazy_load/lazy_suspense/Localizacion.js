@@ -1,16 +1,16 @@
-import React from 'react';
-import MapPage from './lib/MapPage';
+import React, { Suspense, lazy } from 'react';
 
 const config = {
     at1: 'fdafd',
     at2: 'fdafsda'
 };
-
+const MapPage = lazy(() => import('./lib/MapPage'));
+const moment = lazy(() => import('moment'));
 const Localizacion = () => { 
     return(
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <MapPage config={config} ></MapPage>
-        </div>
+        </Suspense>
     ); 
 };
 

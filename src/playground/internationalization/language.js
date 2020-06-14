@@ -21,7 +21,7 @@ const Hello = () => {
 
   return (
     <div>
-      {t('hello', { name: " Jaime "})}
+      {t('mipagina.hello')}
       <Body />
     </div>
   )
