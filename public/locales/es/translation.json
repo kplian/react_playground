@@ -1,6 +1,11 @@
 {
-    "hello": "Hola {{ name }}",    
+    "hello": "Hola, como estas {{ name }}",  
+    "English": "Ingles",
+    "Spanish": "Español",  
     "mipagina":{
-        "hello":"Hola propio"
-    }    
+        "hello":"Buenos dias"
+    },
+
+    "body": "Hola  <1>{{ name }}</1>, tienes un nuevo mensaje."
+
 }
