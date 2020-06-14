@@ -22,7 +22,7 @@ const Hello = () => {
 
   return (
     <div>
-      <p>{t('hello', { name: " Jaime "})}   .... { t('mipagina.hello') }</p>
+      <p>{t('hello', { name: " Jaime "})}   .... { t('mipagina.hello') }   ..... { t('Procesar') }   { t('hello1') }</p>
       <br/>
       {t('hello', { name: " Jaime "})}
       <Body />
@@ -56,6 +56,7 @@ const LanguageSelector = () => {
         <div onChange={changeLanguage}>
           <input type="radio" value="en" name="language" defaultChecked={language === "en" ? true: null} /> {t('English')}
           <input type="radio" value="es" name="language" defaultChecked={language === "es" ? true: null}/> {t('Spanish')}
+          <input type="radio" value="es" name="language" defaultChecked={language === "es" ? true: null}/> {t('French')}
         </div>
     )
 }

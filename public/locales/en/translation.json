@@ -3,8 +3,9 @@
     "thankyou": "Thank you",
     "English": "English",
     "Spanish": "Spanish",
+    "hello1": "Hola XXXX ",
     "mipagina":{
-        "hello":"Custom Hello"
+        "hello":"Good mornig"
     },
     "body": "Hello <1>{{ name }}</1>, you have a message."
 }
