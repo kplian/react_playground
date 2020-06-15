@@ -8521,6 +8521,11 @@ react-facebook-login@^4.1.1:
   resolved "https://registry.yarnpkg.com/react-facebook-login/-/react-facebook-login-4.1.1.tgz#005121236a6ac0dee02099976fb1a3265f9d633e"
   integrity sha512-COnHEHlYGTKipz4963safFAK9PaNTcCiXfPXMS/yxo8El+/AJL5ye8kMJf23lKSSGGPgqFQuInskIHVqGqTvSw==
 
+react-google-login-component@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/react-google-login-component/-/react-google-login-component-0.9.3.tgz#e1f114bb7fc8d1791ae93de1d4e4c0608d3d745f"
+  integrity sha1-4fEUu3/I0Xka6T3h1OTAYI09dF8=
+
 react-i18next@^11.3.4:
   version "11.3.4"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.3.4.tgz#355df5fe5133e5e30302d166f529678100ffc968"
