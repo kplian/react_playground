@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 /*You only need to create a TestApp component in playgrounfd folder and import here*/
 //import TestApp from './playground/internationalization/language';
 import TestApp from './playground/login/login';
+import TestApp2 from './playground/login/googleLogin';
 
+const MyTest = () => {
+    return (<div>
+                <TestApp />
+                <TestApp2 />
+            </div>)
+};
 
 ReactDOM.render(
-    <TestApp />,
+    <MyTest />,
     document.getElementById('root')
 );
