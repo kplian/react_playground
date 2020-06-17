@@ -8390,9 +8390,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 pxp-client@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/pxp-client/-/pxp-client-2.0.9.tgz#8282cd3f51c54302b17322be42e26e714683ce60"
-  integrity sha512-11FQrnYffwXHiV0DB706Z+iazzNYRx9g0wkWs/3jfPOqsl/yhAcRCp1J6XXEUMAIFprP6iE0x1cD8BFi6fPRVA==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/pxp-client/-/pxp-client-2.1.0.tgz#1d33274a62b3d29341214046bfb03be72ee2f8d2"
+  integrity sha512-2A+tnwuMG3DB2b+Afj9kyIu3krGvsbOjOcFLBzUgb+waGv4Y6LqsW9AYk3b7ejFrA19S2cTipt7iJL+1e0YdIA==
   dependencies:
     crypto-js "^4.0.0"
     uuid "^7.0.1"
